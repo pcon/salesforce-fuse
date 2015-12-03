@@ -9,8 +9,10 @@ This is an example of how to implement a handler for an Outbound Message from Sa
 3. Download this repo
 4. Run `mvn clean install`
 5. In JBoss Fuse run
-        features:install cxf
-	   osgi:install -s mvn:com.example.salesforce/soap/${project.version}
+    ```
+    features:install cxf
+    osgi:install -s mvn:com.example.salesforce/soap/${project.version}
+    ```
 6. Add a new _Outbound Message_ in Salesforce
 7. Add a _Workflow_ that sends the _Outbound Message_ to your endpoint.  The URL would be in the format of
         http://example.com/cxf/Salesforce
